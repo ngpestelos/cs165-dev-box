@@ -121,6 +121,11 @@ package { 'nodejs':
   ensure => installed
 }
 
+# VCR dependencies.
+package { 'libcurl4-openssl-dev':
+  ensure => installed
+}
+
 # --- Ruby ---------------------------------------------------------------------
 
 exec { 'install_rvm':
